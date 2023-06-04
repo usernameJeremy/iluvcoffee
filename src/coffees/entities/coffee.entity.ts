@@ -14,6 +14,7 @@ export class Coffee {
     @Column()
     brand: string;
     
+    //join table is owner
     @JoinTable()
     @ManyToMany(
         type  => Flavor, 
